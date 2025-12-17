@@ -1,1 +1,1 @@
-# EzyExplore-Full-Stack-Project
+# EzyExplore - Full Stack Project
