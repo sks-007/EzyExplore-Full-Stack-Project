@@ -1,0 +1,142 @@
+<!-- Footer -->
+<footer class="footer" style="color: whitesmoke;">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section footer-main">
+        <div class="footer-logo">
+          <span class="logo-text">EzyExplorer</span>
+        </div>
+        <p class="footer-description" style="color: whitesmoke;">
+          Discover India's beauty with confidence and ease. Your journey starts here with local buddies, smart tools, and authentic experiences.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title" style="color: rgb(225, 135, 135);">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#tips">Travel Tips</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title" style="color: rgb(153, 235, 102);">Features</h3>
+        <ul class="footer-links">
+          <li><a href="#buddies">Local Buddies</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">Eco-Explore Mode</a></li>
+          <li><a href="#">Expense Splitter</a></li>
+          <li><a href="#">Badge System</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title" style="color: rgb(117, 171, 241);">Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Safety Guidelines</a></li>
+        </ul>
+     </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Contact Info</h3>
+        <div class="contact-info" style="color: whitesmoke;">
+          <div class="contact-item">
+            <i class="fas fa-envelope" ></i>
+            <span style="color: whitesmoke;">abc.ezyexplorer@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span style="color: whitesmoke;" >+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span style="color: whitesmoke;">Mumbai, Maharashtra, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; <%= new Date().getFullYear() %> EzyExplorer. All rights reserved. Made with ❤️ for travelers.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Action Buttons -->
+<div class="floating-actions">
+  <button class="fab-btn scroll-to-top" id="scroll-to-top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <button class="fab-btn" id="wishlist-btn" title="My Wishlist">
+    <i class="fas fa-heart"></i>
+    <span class="wishlist-count" id="wishlist-count">0</span>
+  </button>
+</div>
+
+<!-- Wishlist Modal -->
+<div class="modal" id="wishlist-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">My Wishlist</h2>
+      <button class="modal-close" id="wishlist-modal-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div id="wishlist-items" class="wishlist-items">
+        <div class="empty-wishlist">
+          <i class="fas fa-heart-broken"></i>
+          <p>Your wishlist is empty</p>
+          <p class="empty-subtitle">Start adding destinations you'd like to visit!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Local Buddies Modal -->
+<div class="modal" id="local-buddies-modal">
+  <div class="modal-content local-buddies-modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">
+        <i class="fas fa-user-friends"></i> Local Buddies
+      </h2>
+      <button class="modal-close" id="local-buddies-modal-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-subtitle">Connect with experienced local guides for an authentic travel experience</p>
+      <div id="local-buddies-grid" class="local-buddies-grid">
+        <!-- Local buddies will be loaded dynamically -->
+      </div>
+    </div>
+  </div>
+</div>

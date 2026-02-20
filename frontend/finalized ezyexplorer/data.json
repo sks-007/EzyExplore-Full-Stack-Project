@@ -1,0 +1,678 @@
+{
+  "explore": [
+    {
+      "title": "Kerala",
+      "image": "Images/kerala.png",
+      "description": "Lush greenery, backwaters, and serene beaches — truly God's own country.",
+      "category": "states",
+      "rating": 4.9,
+      "eco": true
+    },
+    {
+      "title": "Rajasthan",
+      "image": "Images/rajasthan.png",
+      "description": "The land of royal palaces, colorful culture, and golden deserts.",
+      "category": "states",
+      "rating": 4.9,
+      "eco": false
+    },
+    {
+      "title": "Goa",
+      "image": "Images/goa.png",
+      "description": "Golden beaches, vibrant nightlife, and delicious seafood delights.",
+      "category": "states",
+      "rating": 4.8,
+      "eco": true
+    },
+    {
+      "title": "Himachal Pradesh",
+      "image": "Images/hp.png",
+      "description": "Snow-capped mountains, adventure sports, and tranquil valleys.",
+      "category": "states",
+      "rating": 4.9,
+      "eco": true
+    },
+    {
+      "title": "Karnataka",
+      "image": "Images/karnataka.png",
+      "description": "A mix of rich heritage, IT hubs, and lush hill stations.",
+      "category": "states",
+      "rating": 4.8,
+      "eco": true
+    },
+    {
+      "title": "Tamil Nadu",
+      "image": "Images/tamil-nadu.png",
+      "description": "Famous for temples, culture, and beautiful hill stations.",
+      "category": "states",
+      "rating": 4.8,
+      "eco": true
+    },
+    {
+      "title": "Uttar Pradesh",
+      "image": "Images/up.png",
+      "description": "Home to the iconic Taj Mahal and diverse cultural heritage.",
+      "category": "states",
+      "rating": 4.7,
+      "eco": false
+    },
+    {
+      "title": "Maharashtra",
+      "image": "Images/mh.png",
+      "description": "The financial capital Mumbai and scenic Western Ghats await you.",
+      "category": "states",
+      "rating": 4.7,
+      "eco": false
+    },
+    {
+      "title": "West Bengal",
+      "image": "Images/west-bengal.png",
+      "description": "A blend of colonial charm, natural beauty, and cultural richness.",
+      "category": "states",
+      "rating": 4.6,
+      "eco": true
+    },
+    {
+      "title": "Gujarat",
+      "image": "Images/gujrat.png",
+      "description": "Vibrant festivals, heritage sites, and the white sands of Rann of Kutch.",
+      "category": "states",
+      "rating": 4.6,
+      "eco": false
+    },
+    {
+      "title": "Himalayas",
+      "image": "Images/mountain-1.png",
+      "description": "The roof of the world - highest mountain range on Earth",
+      "rating": 5.0,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Western Ghats",
+      "image": "mountain/mountain-2.png",
+      "description": "Biodiversity hotspot mountains with lush forests",
+      "rating": 4.8,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Nilgiri Hills",
+      "image": "mountain/mountain-3.png",
+      "description": "Blue mountains beauty with tea plantations",
+      "rating": 4.7,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Aravalli Range",
+      "image": "mountain/mountain-4.png",
+      "description": "Oldest fold mountains with ancient history",
+      "rating": 4.4,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Makalu",
+      "image": "mountain/mountain-5.png",
+      "description": "Great black mountain",
+      "rating": 4.8,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Cho Oyu",
+      "image": "mountain/mountain-6.png",
+      "description": "Turquoise goddess peak",
+      "rating": 4.8,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Dhaulagiri I",
+      "image": "Css/images/Pic1.jpg",
+      "description": "White mountain beauty",
+      "rating": 4.7,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Manaslu",
+      "image": "Css/images/Pic2.png",
+      "description": "Mountain of the spirit",
+      "rating": 4.8,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Nanga Parbat",
+      "image": "Css/images/Pic1.jpg",
+      "description": "Naked mountain challenge",
+      "rating": 4.9,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Annapurna I",
+      "image": "Css/images/Pic2.png",
+      "description": "Goddess of nourishment",
+      "rating": 4.8,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Eastern Ghats",
+      "image": "Css/images/Pic2.png",
+      "description": "Ancient mountain ranges",
+      "rating": 4.5,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Vindhya Range",
+      "image": "Css/images/Pic2.png",
+      "description": "Central Indian mountains",
+      "rating": 4.3,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Satpura Range",
+      "image": "Css/images/Pic1.jpg",
+      "description": "Seven folds mountain",
+      "rating": 4.4,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Cardamom Hills",
+      "image": "Css/images/Pic1.jpg",
+      "description": "Spice mountain ranges",
+      "rating": 4.6,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Khasi Hills",
+      "image": "Css/images/Pic2.png",
+      "description": "Living root bridge mountains",
+      "rating": 4.8,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Garo Hills",
+      "image": "Css/images/Pic1.jpg",
+      "description": "Tribal mountain heritage",
+      "rating": 4.5,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Jaintia Hills",
+      "image": "Css/images/Pic2.png",
+      "description": "Limestone mountain beauty",
+      "rating": 4.4,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Patkai Range",
+      "image": "Css/images/Pic1.jpg",
+      "description": "Eastern border mountains",
+      "rating": 4.3,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Zanskar Range",
+      "image": "Css/images/Pic2.png",
+      "description": "High altitude adventure",
+      "rating": 4.8,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Pir Panjal Range",
+      "image": "Css/images/Pic1.jpg",
+      "description": "Mountain of the fairies",
+      "rating": 4.7,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Dhauladhar Range",
+      "image": "Css/images/Pic2.png",
+      "description": "White ridge mountains",
+      "rating": 4.6,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Karakoram Range",
+      "image": "Css/images/Pic2.png",
+      "description": "Mighty mountain fortress",
+      "rating": 4.9,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Ladakh Range",
+      "image": "Css/images/Pic1.jpg",
+      "description": "High altitude beauty",
+      "rating": 4.8,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Pir Panjal",
+      "image": "Css/images/Pic2.png",
+      "description": "Beautiful mountain range",
+      "rating": 4.7,
+      "eco": true,
+      "category": "mountains"
+    },
+    {
+      "title": "Calangute Beach, Goa",
+      "description": "Queen of beaches with water sports",
+      "image": "beaches/images.png",
+      "rating": 4.8,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Baga Beach, Goa",
+      "description": "Party beach with nightlife",
+      "image": "beaches/img-2.png",
+      "rating": 4.7,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Anjuna Beach, Goa",
+      "description": "Flea market and trance parties",
+      "image": "beaches/img-3.png",
+      "rating": 4.6,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Palolem Beach, Goa",
+      "description": "Crescent-shaped paradise",
+      "image": "beaches/img-4.png",
+      "rating": 4.9,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Radhanagar Beach, Andaman",
+      "description": "Asia's best beach",
+      "image": "beaches/img-5.png",
+      "rating": 5.0,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Vijaynagar Beach, Andaman",
+      "description": "Longest beach in India",
+      "image": "beaches/img-6.png",
+      "rating": 4.9,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Elephant Beach, Andaman",
+      "description": "Snorkeling paradise",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.8,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Kovalam Beach, Kerala",
+      "description": "Three crescent beaches",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.7,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Varkala Beach, Kerala",
+      "description": "Cliff beach with mineral springs",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.8,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Cherai Beach, Kerala",
+      "description": "Golden beach with backwaters",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.6,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Marina Beach, Chennai",
+      "description": "Longest urban beach",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.5,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Mahabalipuram Beach, Tamil Nadu",
+      "description": "Heritage beach with temples",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.7,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Puri Beach, Odisha",
+      "description": "Golden beach with temples",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.6,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Gopalpur Beach, Odisha",
+      "description": "Historical port beach",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.5,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Digha Beach, West Bengal",
+      "description": "Bengal's seaside resort",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.4,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Mandarmani Beach, West Bengal",
+      "description": "Long drive beach",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.3,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Juhu Beach, Mumbai",
+      "description": "Bollywood's favorite beach",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.2,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Alibaug Beach, Maharashtra",
+      "description": "Weekend getaway beach",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.5,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Ganpatipule Beach, Maharashtra",
+      "description": "Temple beach with white sand",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.6,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Tarkarli Beach, Maharashtra",
+      "description": "Coral beach paradise",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.7,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Lakshadweep Islands",
+      "description": "Coral atoll paradise",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.9,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Minicoy Island, Lakshadweep",
+      "description": "Southernmost coral island",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.8,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Bangaram Island, Lakshadweep",
+      "description": "Teardrop island beauty",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.9,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Kadmat Island, Lakshadweep",
+      "description": "Longest coral island",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.8,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Diu Beach, Gujarat",
+      "description": "Portuguese heritage beach",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.5,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Dwarka Beach, Gujarat",
+      "description": "Sacred beach with temple",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.4,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Gokarna Beach, Karnataka",
+      "description": "Pilgrimage beach town",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.6,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Udupi Beach, Karnataka",
+      "description": "Temple beach with culture",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.5,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Malpe Beach, Karnataka",
+      "description": "Fishing harbor beach",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.4,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Rushikonda Beach, Andhra Pradesh",
+      "description": "Golden beach with hills",
+      "image": "Css/images/Pic1.jpg",
+      "rating": 4.6,
+      "eco": true,
+      "category": "beaches"
+    },
+    {
+      "title": "Ramakrishna Beach, Andhra Pradesh",
+      "description": "City beach with monuments",
+      "image": "Css/images/Pic2.png",
+      "rating": 4.5,
+      "eco": false,
+      "category": "beaches"
+    },
+    {
+      "title": "Taj Mahal",
+      "description": "Monument of eternal love",
+      "image": "heritage/taj-mahal.png",
+      "rating": 5.0,
+      "eco": false,
+      "category": "heritage"
+    },
+    {
+      "title": "Red Fort",
+      "description": "Mughal imperial fortress",
+      "image": "heritage/red-fort.png",
+      "rating": 4.8,
+      "eco": false,
+      "category": "heritage"
+    },
+    {
+      "title": "Qutub Minar",
+      "description": "Tallest brick minaret",
+      "image": "heritage/minar.png",
+      "rating": 4.7,
+      "eco": false,
+      "category": "heritage"
+    },
+     {
+      "title": "Khajuraho Temples",
+      "description": "Erotic art and stone carvings",
+      "image": "heritage/khajurao.png",
+      "rating": 4.8,
+      "eco": true,
+      "category": "heritage"
+    },
+    {
+      "title": "Hampi",
+      "description": "Ruins of Vijayanagara Empire",
+      "image": "heritage/hampi.png",
+      "rating": 4.9,
+      "eco": true,
+      "category": "heritage"
+    },
+    {
+      "title": "Sun Temple",
+      "description": "Icon of Hyderabad",
+      "image": "heritage/sun-temple.png",
+      "rating": 4.7,
+      "eco": false,
+      "category": "heritage"
+    },
+    {
+      "title": "Gateway of India",
+      "description": "Symbol of Mumbai",
+      "image": "heritage/gateway.png",
+      "rating": 4.6,
+      "eco": false,
+      "category": "heritage"
+    },
+    {
+      "title": "Ajanta Caves",
+      "description": "Buddhist cave art",
+      "image": "heritage/ajanta.png",
+      "rating": 4.9,
+      "eco": true,
+      "category": "heritage"
+    },
+    {
+      "title": "Ellora Caves",
+      "description": "Rock-cut architecture masterpiece",
+      "image": "heritage/ellora.png",
+      "rating": 5.0,
+      "eco": true,
+      "category": "heritage"
+    },
+    {
+      "title": "Konark Sun Temple",
+      "description": "Chariot of the sun god",
+      "image": "heritage/konark.png",
+      "rating": 4.8,
+      "eco": true,
+      "category": "heritage"
+    },
+    {
+      "title": "Sanchi Stupa",
+      "description": "Buddhist heritage site",
+      "image": "heritage/sanchi.png",
+      "rating": 4.7,
+      "eco": true,
+      "category": "heritage"
+    },
+    {
+      "title": "Mysore Palace",
+      "description": "Royal splendor of Karnataka",
+      "image": "heritage/mysore.png",
+      "rating": 4.9,
+      "eco": false,
+      "category": "heritage"
+    },
+    {
+      "title": "Amber Fort",
+      "description": "Majestic hill fort in Jaipur",
+      "image": "heritage/amber.png",
+      "rating": 4.8,
+      "eco": false,
+      "category": "heritage"
+    },
+    {
+      "title": "Mehrangarh Fort",
+      "description": "Massive fort overlooking Jodhpur",
+      "image": "heritage/mehrangarh.png",
+      "rating": 4.9,
+      "eco": false,
+      "category": "heritage"
+    },
+    {
+      "title": "Fatehpur Sikri",
+      "description": "Mughal city of red sandstone",
+      "image": "heritage/fatehpur.png",
+      "rating": 4.7,
+      "eco": false,
+      "category": "heritage"
+    },
+    {
+      "title": "Sundarbans",
+      "description": "World’s largest mangrove forest",
+      "image": "heritage/sundarbans.png",
+      "rating": 4.9,
+      "eco": true,
+      "category": "heritage"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Discovering Paradise: A Journey Through Kashmir Valley",
+      "description": "From the serene Dal Lake to the majestic mountains of Gulmarg, Kashmir offers experiences that touch your soul. Connect with local buddies for authentic experiences.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
+      "category": "Adventure",
+      "author": "Rajesh Traveller",
+      "date": "Dec 15, 2024"
+    },
+    {
+      "title": "Royal Rajasthan: A Regal Experience Through Time",
+      "description": "Explore the magnificent palaces, forts, and cultural heritage that makes Rajasthan the crown jewel of India. Use our expense splitter for group tours.",
+      "image": "Images/rajasthan.png",
+      "category": "Heritage",
+      "author": "Priya Explorer",
+      "date": "Dec 12, 2024"
+    },
+    {
+      "title": "Kerala's Backwaters: Nature's Own Spa",
+      "description": "Experience the therapeutic beauty of Kerala's backwaters aboard traditional houseboats. Earn your Culture Lover badge while exploring local traditions.",
+      "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=400&h=250&fit=crop",
+      "category": "Nature",
+      "author": "Amit Nature",
+      "date": "Dec 10, 2024"
+    }
+  ]
+}

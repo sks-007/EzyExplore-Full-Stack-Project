@@ -1,0 +1,94 @@
+<!-- Load hash navigation first -->
+<script src="js/hash-navigation.js"></script>
+<script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/explore.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/features.js"></script>
+<script src="js/enhanced-features.js"></script>
+<script src="js/comments.js"></script>
+<script src="js/helpful.js"></script>
+<script src="js/local-buddies.js"></script>
+<script>
+  fetch("data.json")
+    .then(response => response.json())
+    .then(data => {
+      const gallery = document.getElementById("gallery");
+      if (gallery) {
+        data.explore.forEach(item => {
+          const img = document.createElement("img");
+          img.src = item.image;
+          img.alt = item.title;
+          img.style.width = "200px";
+          img.style.margin = "10px";
+          gallery.appendChild(img);
+        });
+      }
+    })
+    .catch(err => console.error("Error loading JSON:", err));
+</script>
+
+<!-- Hash Navigation Button Handlers -->
+<script>
+  // Wait for DOM and hash navigation to be ready
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 Initializing hash navigation button handlers');
+    
+    // Navigation links - update to use hash navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = this.getAttribute('data-section') || this.getAttribute('href').slice(1);
+        window.hashNav.goToSection(section);
+      });
+    });
+    
+    // Hero "Start Exploring" button
+    const exploreBtn = document.getElementById('explore-btn');
+    if (exploreBtn) {
+      exploreBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.hashNav.goToSection('explore', 'states');
+      });
+    }
+    
+    // Filter tabs in explore section
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Get category from data-category attribute or id
+        let category = this.getAttribute('data-category');
+        if (!category && this.id === 'local-buddies-btn') {
+          category = 'local-buddies';
+        }
+        
+        if (category) {
+          window.hashNav.goToSection('explore', category);
+        }
+      });
+    });
+    
+    // View More button
+    const viewMoreBtn = document.getElementById('view-more-btn');
+    if (viewMoreBtn) {
+      viewMoreBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('View more destinations clicked');
+      });
+    }
+    
+    // Learn More button
+    const learnMoreBtn = document.getElementById('learn-more-btn');
+    if (learnMoreBtn) {
+      learnMoreBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.hashNav.goToSection('about');
+      });
+    }
+    
+    console.log('✅ Hash navigation handlers initialized');
+  });
+</script>

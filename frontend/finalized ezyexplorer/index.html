@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EzyExplorer - Discover India's Hidden Gems</title>
+
+  <link rel="stylesheet" href="Css/main.css">
+  <link rel="stylesheet" href="Css/components.css">
+  <link rel="stylesheet" href="Css/responsive.css">
+  <link rel="stylesheet" href="Css/enhanced-features.css">
+  <link rel="stylesheet" href="Css/color-fixes.css">
+  <link rel="stylesheet" href="Css/local-buddies.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    #learn-more-btn {
+      background-color: white;
+    }
+
+    .filter-tab {
+      color: #333;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .filter-tab:hover {
+      color: white;
+    }
+
+    .filter-tab i,
+    .filter-tab span {
+      transition: color 0.3s ease;
+    }
+
+    .filter-tab:hover i,
+    .filter-tab:hover span {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="brand-logo" id="logo">
+        <span class="logo-text">EzyExplorer</span>
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#explore" class="nav-link" data-section="explore">Explore</a>
+        <a href="#reviews" class="nav-link" data-section="reviews">Reviews</a>
+        <a href="#tips" class="nav-link" data-section="tips">Travel Tips</a>
+        <a href="#blog" class="nav-link" data-section="blog">Blog</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <button class="login-btn" id="login-btn">Login</button>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+      <div class="floating-elements">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line-1">Discover Your Life,</span>
+          <span class="title-line-2">Travel Where You Want</span>
+        </h1>
+        <p class="hero-description">
+          Embark on unforgettable journeys through India's most beautiful destinations.
+          From snow-capped mountains to pristine beaches, discover hidden gems with local buddies and create memories that last forever.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary btn-hero" id="explore-btn">
+            <span>Start Exploring</span>
+          </button>
+          <button class="btn-secondary btn-hero" id="learn-more-btn">
+            <span>Learn More</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-mountain"></i>
+          </div>
+          <div class="stat-number" data-target="500">0</div>
+          <div class="stat-label">Destinations</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-number" data-target="25000">0</div>
+          <div class="stat-label">Happy Travelers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <div class="stat-number" data-target="28">0</div>
+          <div class="stat-label">States Covered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="stat-number" data-target="150">0</div>
+          <div class="stat-label">Local Buddies</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Section -->
+  <section id="explore" class="explore-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Amazing Destinations</h2>
+        <p class="section-subtitle">Discover the beauty of India through our curated collection of destinations</p>
+      </div>
+
+      <div class="search-container" >
+        <div class="search-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Search destinations, activities, or locations..."
+            autocomplete="off"
+          >
+          <button class="search-btn" id="search-btn">
+            <i class="fas fa-filter"></i>
+            <span>Search</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="filter-tabs" >
+        <button class="filter-tab active" data-category="states">
+          <i class="fas fa-map-marked-alt"></i>
+          <span>States</span>
+        </button>
+        <button class="filter-tab" data-category="mountains">
+          <i class="fas fa-mountain"></i>
+          <span>Mountains</span>
+        </button>
+        <button class="filter-tab" data-category="beaches">
+          <i class="fas fa-umbrella-beach"></i>
+          <span>Beaches</span>
+        </button>
+        <button class="filter-tab" data-category="heritage">
+          <i class="fas fa-monument"></i>
+          <span>Heritage</span>
+        </button>
+        <button class="filter-tab" id="local-buddies-btn">
+          <i class="fas fa-user-friends"></i>
+          <span>Local Buddies</span>
+        </button>
+      </div>
+
+      <!-- JSON will load destinations here -->
+      <div class="destinations-grid" id="destinations-grid">
+        <!-- Destinations will be loaded dynamically from JSON -->
+      </div>
+
+      <div class="view-more-container">
+        <button class="btn-outline" id="view-more-btn">
+          <span class="btn-text">View More Destinations</span>
+          <i class="fas fa-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What Travelers Say</h2>
+        <p class="section-subtitle">Real experiences from our community of explorers</p>
+      </div>
+      
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Reviewer" class="reviewer-avatar">
+              <div class="reviewer-details">
+                <div class="reviewer-name">Rahul Sharma</div>
+                <div class="review-location">Visited Jaipur</div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <span class="stars">★★★★★</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Amazing heritage experience! The Pink City's palaces and forts are absolutely breathtaking. Connected with a local buddy who showed me hidden gems. The local food tour was incredible too!"</p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">2 weeks ago</span>
+            <div class="review-helpful">
+              <button class="helpful-btn">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Helpful (24)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Reviewer" class="reviewer-avatar">
+              <div class="reviewer-details">
+                <div class="reviewer-name">Priya Verma</div>
+                <div class="review-location">Visited Kerala</div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <span class="stars">★★★★★</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Kerala backwaters are pure magic! Stayed in a houseboat and it was the most peaceful experience. The local culture is so rich and welcoming. Used the expense splitter for group travel - super convenient!"</p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">1 month ago</span>
+            <div class="review-helpful">
+              <button class="helpful-btn">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Helpful (31)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Reviewer" class="reviewer-avatar">
+              <div class="reviewer-details">
+                <div class="reviewer-name">Ankit Traveller</div>
+                <div class="review-location">Visited Himachal</div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <span class="stars">★★★★★</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Trekking in Himachal Pradesh was absolutely incredible! The mountain views are surreal. Manali and Shimla both exceeded my expectations. Earned my Mountain Climber badge! 🏔️"</p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">3 weeks ago</span>
+            <div class="review-helpful">
+              <button class="helpful-btn">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Helpful (18)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Reviewer" class="reviewer-avatar">
+              <div class="reviewer-details">
+                <div class="reviewer-name">Sneha Mishra</div>
+                <div class="review-location">Visited Goa</div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <span class="stars">★★★★☆</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Goa beaches are perfect for relaxation! The nightlife is amazing and the seafood is to die for. Planning to visit again soon."</p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">1 week ago</span>
+            <div class="review-helpful">
+              <button class="helpful-btn">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Helpful (15)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="Images/rajasthan.png" alt="Reviewer" class="reviewer-avatar">
+              <div class="reviewer-details">
+                <div class="reviewer-name">Vikram Gupta</div>
+                <div class="review-location">Visited Rajasthan</div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <span class="stars">★★★★★</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Rajasthan's royal heritage is magnificent! From Udaipur's lakes to Jaisalmer's golden city, every destination tells a story."</p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">2 months ago</span>
+            <div class="review-helpful">
+              <button class="helpful-btn">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Helpful (22)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Reviewer" class="reviewer-avatar">
+              <div class="reviewer-details">
+                <div class="reviewer-name">Arjun Kumar</div>
+                <div class="review-location">Visited Andaman</div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <span class="stars">★★★★★</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"Andaman Islands are paradise on earth! The crystal clear waters and pristine beaches are absolutely stunning. Perfect for water sports."</p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">3 weeks ago</span>
+            <div class="review-helpful">
+              <button class="helpful-btn">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Helpful (19)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- User Comments Section -->
+      <div class="user-comments-section">
+        <div class="comments-header">
+          <h3 class="comments-title">Community Comments</h3>
+        </div>
+        
+        <!-- Add Comment Form -->
+        <div class="add-comment-form-section" id="add-comment-form-section">
+          <div class="comment-form-card">
+            <h4 class="form-card-title">
+              <i class="fas fa-plus-circle"></i>
+              Share Your Experience
+            </h4>
+            <form id="comment-form">
+              <div class="form-group">
+                <label for="comment-name">Your Name</label>
+                <input type="text" id="comment-name" class="form-input" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="comment-text">Your Comment</label>
+                <textarea id="comment-text" class="form-input" rows="4" placeholder="Share your thoughts about your travel experience..." required></textarea>
+              </div>
+              <div class="form-group">
+                <label>Rating</label>
+                <div class="star-rating" id="star-rating">
+                  <span class="star" data-rating="1">★</span>
+                  <span class="star" data-rating="2">★</span>
+                  <span class="star" data-rating="3">★</span>
+                  <span class="star" data-rating="4">★</span>
+                  <span class="star" data-rating="5">★</span>
+                </div>
+                <input type="hidden" id="comment-rating" value="5">
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn-submit-comment">
+                  <i class="fas fa-paper-plane"></i>
+                  Submit Comment
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Display Comments -->
+        <div class="comments-display-section">
+          <h4 class="comments-display-title">
+            <i class="fas fa-comments"></i>
+            Recent Comments
+          </h4>
+          <div class="comments-list" id="comments-list">
+            <!-- Comments will be dynamically loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Buddies Section -->
+  <section id="buddies" class="buddies-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Connect with Local Buddies</h2>
+        <p class="section-subtitle" style="color:black" >Meet verified locals who love showing travelers around their city</p>
+      </div>
+      
+      <div class="buddies-grid">
+        <div class="buddy-card">
+          <div class="buddy-image">
+            <img src="people/img.png" alt="Local Buddy">
+            <div class="buddy-verified">
+              <i class="fas fa-check-circle"></i>
+              <span>Verified</span>
+            </div>
+          </div>
+          <div class="buddy-info">
+            <h3 class="buddy-name">Arjun Kumar</h3>
+            <p class="buddy-location">Delhi, India</p>
+            <div class="buddy-specialties">
+              <span class="specialty-tag">Food Tours</span>
+              <span class="specialty-tag">Photography</span>
+              <span class="specialty-tag">History</span>
+            </div>
+            <div class="buddy-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (127 reviews)</span>
+            </div>
+            <div class="buddy-price">
+              <span class="price">₹250/hour</span>
+            </div>
+            <button class="btn-primary btn-buddy">
+              <i class="fas fa-comments"></i>
+              <span>Connect</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="buddy-card">
+          <div class="buddy-image">
+            <img src="people/img4.png" alt="Local Buddy">
+            <div class="buddy-verified">
+              <i class="fas fa-check-circle"></i>
+              <span>Verified</span>
+            </div>
+          </div>
+          <div class="buddy-info">
+            <h3 class="buddy-name">Kumjeet Patel</h3>
+            <p class="buddy-location">Mumbai, India</p>
+            <div class="buddy-specialties">
+              <span class="specialty-tag">Art & Culture</span>
+              <span class="specialty-tag">Shopping</span>
+              <span class="specialty-tag">Nightlife</span>
+            </div>
+            <div class="buddy-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8 (89 reviews)</span>
+            </div>
+            <div class="buddy-price">
+              <span class="price">₹400/hour</span>
+            </div>
+            <button class="btn-primary btn-buddy">
+              <i class="fas fa-comments"></i>
+              <span>Connect</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="buddy-card">
+          <div class="buddy-image">
+            <img src="people/img3.png" alt="Local Buddy">
+            <div class="buddy-verified">
+              <i class="fas fa-check-circle"></i>
+              <span>Verified</span>
+            </div>
+          </div>
+          <div class="buddy-info">
+            <h3 class="buddy-name">Rajesh Singh</h3>
+            <p class="buddy-location">Goa, India</p>
+            <div class="buddy-specialties">
+              <span class="specialty-tag">Beach Activities</span>
+              <span class="specialty-tag">Water Sports</span>
+              <span class="specialty-tag">Parties</span>
+            </div>
+            <div class="buddy-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-text">4.7 (156 reviews)</span>
+            </div>
+            <div class="buddy-price">
+              <span class="price">₹450/hour</span>
+            </div>
+            <button class="btn-primary btn-buddy">
+              <i class="fas fa-comments"></i>
+              <span>Connect</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="buddy-card">
+          <div class="buddy-image">
+            <img src="people/img5.png
+            " alt="Local Buddy">
+            <div class="buddy-verified">
+              <i class="fas fa-check-circle"></i>
+              <span>Verified</span>
+            </div>
+          </div>
+          <div class="buddy-info">
+            <h3 class="buddy-name">Priyanka Sharma</h3>
+            <p class="buddy-location">Kerala, India</p>
+            <div class="buddy-specialties">
+              <span class="specialty-tag">Backwaters</span>
+              <span class="specialty-tag">Ayurveda</span>
+              <span class="specialty-tag">Cultural Tours</span>
+            </div>
+            <div class="buddy-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (203 reviews)</span>
+            </div>
+            <div class="buddy-price">
+              <span class="price">₹350/hour</span>
+            </div>
+            <button class="btn-primary btn-buddy">
+              <i class="fas fa-comments"></i>
+              <span>Connect</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Tips Section -->
+  <section id="tips" class="tips-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Travel Tips & Guides</h2>
+        <p class="section-subtitle">Expert advice to make your journey memorable and safe</p>
+      </div>
+      
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="tip-title">Safety First</h3>
+          <p class="tip-content">
+            Always keep emergency contacts, share your itinerary with family, and keep copies of important documents. Use our local buddy network for safer exploration.
+          </p>
+          <div class="tip-tags">
+            <span class="tip-tag">Safety</span>
+            <span class="tip-tag">Emergency</span>
+          </div>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-rupee-sign"></i>
+          </div>
+          <h3 class="tip-title">Smart Budgeting</h3>
+          <p class="tip-content">
+            Use our expense splitter for group travel, travel during off-season, and stay in homestays for authentic experiences at lower costs.
+          </p>
+          <div class="tip-tags">
+            <span class="tip-tag">Budget</span>
+            <span class="tip-tag">Group Travel</span>
+          </div>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3 class="tip-title">Eco-Friendly Travel</h3>
+          <p class="tip-content">
+            Use our Eco-Explore mode to find sustainable destinations, eco-friendly accommodations, and support local communities while traveling.
+          </p>
+          <div class="tip-tags">
+            <span class="tip-tag">Eco-Travel</span>
+            <span class="tip-tag">Sustainable</span>
+          </div>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3 class="tip-title">Local Cuisine</h3>
+          <p class="tip-content">
+            Connect with local buddies for authentic food experiences. Try street food from clean vendors and be adventurous with regional specialties.
+          </p>
+          <div class="tip-tags">
+            <span class="tip-tag">Food</span>
+            <span class="tip-tag">Local Experience</span>
+          </div>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="tip-title">Digital Tools</h3>
+          <p class="tip-content">
+            Use offline maps, download translation apps, keep backup power banks, and use our app to track your badges and achievements.
+          </p>
+          <div class="tip-tags">
+            <span class="tip-tag">Technology</span>
+            <span class="tip-tag">Apps</span>
+          </div>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 class="tip-title">Connect Locally</h3>
+          <p class="tip-content">
+            Use our Local Buddy Connect feature to meet verified locals who can show you hidden gems and provide authentic cultural experiences.
+          </p>
+          <div class="tip-tags">
+            <span class="tip-tag">Local Connection</span>
+            <span class="tip-tag">Cultural Exchange</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+<section id="blog" class="blog-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Latest Travel Stories</h2>
+      <p class="section-subtitle">Inspiring stories from fellow travelers and travel experts</p>
+    </div>
+    
+    <!-- Blog grid will be populated dynamically -->
+    <div class="blog-grid" id="blog-grid">
+      <!-- Blog cards will be loaded from JSON -->
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">About EzyExplorer</h2>
+          <p class="about-description">
+            EzyExplorer is more than just a travel platform - we're your gateway to discovering India's incredible diversity through authentic local experiences. 
+            Our mission is to make travel accessible, safe, and unforgettable for everyone while supporting local communities.
+          </p>
+          <p class="about-description">
+            Founded by passionate travelers, we believe that every journey has the power to transform lives. Whether you're seeking adventure in the mountains, 
+            peace by the beaches, or cultural immersion in heritage cities, we connect you with verified local buddies and provide tools to make your journey seamless.
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <i class="fas fa-users"></i>
+              <span class="feature-text">Local Buddy Network</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-leaf"></i>
+              <span class="feature-text">Eco-Friendly Travel</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-trophy"></i>
+              <span class="feature-text">Gamified Exploration</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-calculator"></i>
+              <span class="feature-text">Smart Expense Splitting</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=400&fit=crop" alt="About EzyExplorer">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Modal -->
+  <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Welcome Back!</h2>
+        <button class="modal-close" id="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-tab="login">Login</button>
+          <button class="auth-tab" data-tab="signup">Sign Up</button>
+        </div>
+        
+        <form class="auth-form" id="login-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div id="login-error-message" style="display: none; color: #ef4444; font-size: 0.9rem; margin-bottom: 1rem; padding: 0.75rem; background: #fee; border-radius: 8px; border-left: 4px solid #ef4444;">
+            <i class="fas fa-exclamation-circle" style="margin-right: 8px;"></i>
+            <span id="login-error-text"></span>
+          </div>
+          <div class="form-group" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <input type="checkbox" id="remember" name="remember" style="width: auto; margin-right: 8px;">
+            <label for="remember" style="margin-bottom: 0; cursor: pointer; user-select: none;">Remember me</label>
+          </div>
+          <button type="submit" class="btn-primary full-width">Sign In</button>
+        </form>
+        
+        <form class="auth-form" id="signup-form" style="display: none;">
+          <div class="form-group">
+            <label for="signup-name">Full Name</label>
+            <input type="text" id="signup-name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-email">Email Address</label>
+            <input type="email" id="signup-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" name="password" required>
+          </div>
+          <div id="signup-error-message" style="display: none; color: #ef4444; font-size: 0.9rem; margin-bottom: 1rem; padding: 0.75rem; background: #fee; border-radius: 8px; border-left: 4px solid #ef4444;">
+            <i class="fas fa-exclamation-circle" style="margin-right: 8px;"></i>
+            <span id="signup-error-text"></span>
+          </div>
+          <button type="submit" class="btn-primary full-width">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" style="color: whitesmoke;">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section footer-main">
+          <div class="footer-logo">
+            <span class="logo-text">EzyExplorer</span>
+          </div>
+          <p class="footer-description" style="color: whitesmoke;">
+            Discover India's beauty with confidence and ease. Your journey starts here with local buddies, smart tools, and authentic experiences.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3 class="footer-title" style="color: rgb(225, 135, 135);">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#tips">Travel Tips</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3 class="footer-title" style="color: rgb(153, 235, 102);">Features</h3>
+          <ul class="footer-links">
+            <li><a href="#buddies">Local Buddies</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Eco-Explore Mode</a></li>
+            <li><a href="#">Expense Splitter</a></li>
+            <li><a href="#">Badge System</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3 class="footer-title" style="color: rgb(117, 171, 241);">Support</h3>
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Safety Guidelines</a></li>
+          </ul>
+       </div>
+        
+        <div class="footer-section">
+          <h3 class="footer-title">Contact Info</h3>
+          <div class="contact-info" style="color: whitesmoke;">
+            <div class="contact-item">
+              <i class="fas fa-envelope" ></i>
+              <span style="color: whitesmoke;">abc.ezyexplorer@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span style="color: whitesmoke;" >+91 98765 43210</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span style="color: whitesmoke;">Mumbai, Maharashtra, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2025 EzyExplorer. All rights reserved. Made with ❤️ for travelers.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <button class="fab-btn scroll-to-top" id="scroll-to-top" title="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <button class="fab-btn" id="wishlist-btn" title="My Wishlist">
+      <i class="fas fa-heart"></i>
+      <span class="wishlist-count" id="wishlist-count">0</span>
+    </button>
+  </div>
+
+  <!-- Wishlist Modal -->
+  <div class="modal" id="wishlist-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">My Wishlist</h2>
+        <button class="modal-close" id="wishlist-modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="wishlist-items" class="wishlist-items">
+          <div class="empty-wishlist">
+            <i class="fas fa-heart-broken"></i>
+            <p>Your wishlist is empty</p>
+            <p class="empty-subtitle">Start adding destinations you'd like to visit!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Local Buddies Modal -->
+  <div class="modal" id="local-buddies-modal">
+    <div class="modal-content local-buddies-modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">
+          <i class="fas fa-user-friends"></i> Local Buddies
+        </h2>
+        <button class="modal-close" id="local-buddies-modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-subtitle">Connect with experienced local guides for an authentic travel experience</p>
+        <div id="local-buddies-grid" class="local-buddies-grid">
+          <!-- Local buddies will be loaded dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load hash navigation first -->
+  <script src="js/hash-navigation.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/explore.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/features.js"></script>
+  <script src="js/enhanced-features.js"></script>
+  <script src="js/comments.js"></script>
+  <script src="js/helpful.js"></script>
+  <script src="js/local-buddies.js"></script>
+    <script>
+    fetch("data.json")
+      .then(response => response.json())
+      .then(data => {
+        const gallery = document.getElementById("gallery");
+        data.explore.forEach(item => {
+          const img = document.createElement("img");
+          img.src = item.image;
+          img.alt = item.title;
+          img.style.width = "200px";
+          img.style.margin = "10px";
+          gallery.appendChild(img);
+        });
+      })
+      .catch(err => console.error("Error loading JSON:", err));
+  </script>
+  
+  <!-- Hash Navigation Button Handlers -->
+  <script>
+    // Wait for DOM and hash navigation to be ready
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('🚀 Initializing hash navigation button handlers');
+      
+      // Navigation links - update to use hash navigation
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const section = this.getAttribute('data-section') || this.getAttribute('href').slice(1);
+          window.hashNav.goToSection(section);
+        });
+      });
+      
+      // Hero "Start Exploring" button
+      const exploreBtn = document.getElementById('explore-btn');
+      if (exploreBtn) {
+        exploreBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.hashNav.goToSection('explore', 'states');
+        });
+      }
+      
+      // Filter tabs in explore section
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      filterTabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Get category from data-category attribute or id
+          let category = this.getAttribute('data-category');
+          if (!category && this.id === 'local-buddies-btn') {
+            category = 'local-buddies';
+          }
+          
+          if (category) {
+            window.hashNav.goToSection('explore', category);
+          }
+        });
+      });
+      
+      // View More button
+      const viewMoreBtn = document.getElementById('view-more-btn');
+      if (viewMoreBtn) {
+        viewMoreBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          // You can implement pagination or load more functionality here
+          console.log('View more destinations clicked');
+        });
+      }
+      
+      // Learn More button
+      const learnMoreBtn = document.getElementById('learn-more-btn');
+      if (learnMoreBtn) {
+        learnMoreBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.hashNav.goToSection('about');
+        });
+      }
+      
+      console.log('✅ Hash navigation handlers initialized');
+    });
+  </script>
+  
+ </body>
+</html>

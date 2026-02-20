@@ -1,0 +1,395 @@
+/* Color Fixes and Light Mode Improvements */
+
+/* Ensure Light Mode Default Colors */
+:root,
+body:not([data-theme="dark"]),
+[data-theme="light"] {
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+  --text-light: #ffffff;
+  
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-section: #f8fafc;
+  
+  --border-color: #e5e7eb;
+  --border-light: #f3f4f6;
+  --border-dark: #d1d5db;
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix Body Background in Light Mode */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Fix Navigation Colors */
+.navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: var(--text-primary);
+}
+
+.navbar .nav-link {
+  color: #111827 !important;
+}
+
+.navbar .theme-toggle {
+  color: #111827;
+  border-color: #e5e7eb;
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(15, 23, 42, 0.95) !important;
+}
+
+[data-theme="dark"] .navbar .nav-link {
+  color: #f9fafb !important;
+}
+
+[data-theme="dark"] .navbar .theme-toggle {
+  color: #f9fafb;
+  border-color: #334155;
+}
+
+/* Fix Section Backgrounds */
+section {
+  background-color: var(--bg-section);
+}
+
+.hero-section {
+  background: var(--gradient-primary);
+}
+
+/* Fix Section Titles and Text */
+.section-title {
+  color: var(--text-primary) !important;
+}
+
+.section-subtitle {
+  color: var(--text-secondary) !important;
+}
+
+/* Fix Card Colors in Light Mode */
+.destination-card,
+.review-card,
+.buddy-card,
+.tip-card,
+.blog-card {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.destination-card:hover,
+.review-card:hover,
+.buddy-card:hover,
+.tip-card:hover,
+.blog-card:hover {
+  background: var(--bg-card-hover);
+}
+
+/* Fix Button Colors */
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+}
+
+/* Fix Search Bar Colors */
+.search-wrapper {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+}
+
+.search-input {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-icon {
+  color: var(--text-muted);
+}
+
+.search-wrapper:focus-within .search-icon {
+  color: var(--primary-color);
+}
+
+/* Fix Filter Chips */
+.filter-chip {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+.filter-chip:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.filter-chip.active {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+/* Fix Modal Colors */
+.modal-content {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.modal-title {
+  color: var(--text-primary);
+}
+
+.modal-close {
+  color: var(--text-muted);
+}
+
+.modal-close:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+/* Fix Wishlist Items */
+.wishlist-item {
+  background: var(--bg-card-hover);
+}
+
+.wishlist-item-title {
+  color: var(--text-primary);
+}
+
+.wishlist-item-location {
+  color: var(--text-muted);
+}
+
+/* Fix Empty States */
+.empty-wishlist {
+  color: var(--text-secondary);
+}
+
+.empty-wishlist i {
+  color: var(--text-muted);
+}
+
+/* Fix Notification Colors */
+.notification {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Fix Floating Action Buttons */
+.fab-btn {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+/* Fix Eco-Explore Box */
+.eco-explore-box {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.eco-explore-box h3 {
+  color: var(--text-primary);
+}
+
+.eco-explore-box p {
+  color: var(--text-secondary);
+}
+
+/* Fix Filter Tabs */
+.filter-tab {
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.filter-tab:hover {
+  background: var(--bg-card-hover);
+  color: var(--primary-color);
+}
+
+.filter-tab.active {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+/* Fix Footer Colors */
+.footer {
+  background: #1a1a2e;
+  color: #ffffff;
+}
+
+.footer-title {
+  color: #ffffff;
+}
+
+.footer-links a {
+  color: #e0e0e0;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Dark Mode Specific Fixes */
+[data-theme="dark"] body {
+  background-color: #0f172a;
+  color: #f9fafb;
+}
+
+[data-theme="dark"] section {
+  background-color: #1e293b;
+}
+
+[data-theme="dark"] .section-title {
+  color: #f9fafb !important;
+}
+
+[data-theme="dark"] .section-subtitle {
+  color: #e5e7eb !important;
+}
+
+[data-theme="dark"] .destination-card,
+[data-theme="dark"] .review-card,
+[data-theme="dark"] .buddy-card,
+[data-theme="dark"] .tip-card,
+[data-theme="dark"] .blog-card {
+  background: #1e293b;
+  color: #f9fafb;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .destination-card:hover,
+[data-theme="dark"] .review-card:hover,
+[data-theme="dark"] .buddy-card:hover,
+[data-theme="dark"] .tip-card:hover,
+[data-theme="dark"] .blog-card:hover {
+  background: #334155;
+}
+
+[data-theme="dark"] .search-wrapper {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .search-input {
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .search-input::placeholder {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .filter-chip {
+  background: #1e293b;
+  border-color: #334155;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .filter-chip:hover {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+[data-theme="dark"] .modal-content {
+  background: #1e293b;
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .wishlist-item {
+  background: #334155;
+}
+
+[data-theme="dark"] .eco-explore-box {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .filter-tab {
+  background: #1e293b;
+  border-color: #334155;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .filter-tab:hover {
+  background: #334155;
+}
+
+/* Fix Destination Card Elements */
+.destination-name,
+.destination-title {
+  color: var(--text-primary) !important;
+}
+
+.destination-description {
+  color: var(--text-secondary) !important;
+}
+
+.destination-location {
+  color: var(--text-muted) !important;
+}
+
+/* Fix Review Card Elements */
+.reviewer-name {
+  color: var(--text-primary) !important;
+}
+
+.review-location {
+  color: var(--text-muted) !important;
+}
+
+.review-content p {
+  color: var(--text-secondary) !important;
+}
+
+/* Fix Rating Stars */
+.stars {
+  color: #fbbf24;
+}
+
+/* Fix Badges */
+.eco-badge {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid #10b981;
+}
+
+/* Ensure proper transitions */
+* {
+  transition: background-color 0.3s ease, 
+              color 0.3s ease, 
+              border-color 0.3s ease;
+}
+
+button,
+a {
+  transition: all 0.3s ease;
+}
