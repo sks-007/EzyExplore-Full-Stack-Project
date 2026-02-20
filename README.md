@@ -98,7 +98,7 @@ npm run seed:all
 
 ## Scripts
 
-- `npm start` - Start the development server
+- `npm start` - Start the development server.
 - `npm run dev` - Start with nodemon (auto-restart)
 - `npm run prod` - Start production server
 - `npm run seed` - Seed basic data
